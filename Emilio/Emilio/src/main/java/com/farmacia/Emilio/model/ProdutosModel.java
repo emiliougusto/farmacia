@@ -9,8 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 @Entity(name = "TBPRODUTOS")
-
-
 public class ProdutosModel {
   @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "CDPRODUTO")

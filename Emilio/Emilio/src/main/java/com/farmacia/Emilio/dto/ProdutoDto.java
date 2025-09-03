@@ -11,7 +11,6 @@ public record ProdutoDto(
         @NotBlank(message = "Não é possivel salvar o produto sem descrição!")
         String dsBula,
         @NotNull(message = "Não é possivel salvar o produto sem preço!")
-        @DecimalMin(value = "0.01", message = "O valor do produto deve ser maior que zero.")
+        @DecimalMin(value = "0.01", message = "O valor do produto deve ser maior que 0.01.")
         double vlProduto
-) {
-}
+) {}
