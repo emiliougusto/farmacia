@@ -1,5 +1,4 @@
 package com.farmacia.Emilio.model;
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Entity(name = "TBPRODUTOS")
 
 
-public class Produtos {
+public class ProdutosModel {
   @Id@GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "CDPRODUTO")
     private Integer cdProduto;
@@ -21,5 +20,5 @@ public class Produtos {
   @Column(name="DSBULA")
     private String dsBula;
     @Column(name ="VLPRODUTO")
-    protected Integer vlProduto;
+        double vlProduto;
 }
