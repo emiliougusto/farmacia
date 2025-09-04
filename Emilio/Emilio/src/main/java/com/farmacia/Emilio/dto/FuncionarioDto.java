@@ -1,6 +1,8 @@
 package com.farmacia.Emilio.dto;
 
+import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 public record FuncionarioDto(
         @NotBlank(message = "Não tem funcionarios sem nome")
@@ -11,8 +13,9 @@ public record FuncionarioDto(
         String telFuncionario,
         @NotBlank(message = "Não é possivel ter um funcionario sem Email")
         String emailFuncionario,
-        @NotBlank(message = "Não é possivel deixar um funcionario sem sálario")
-        double salarioFuncionario,
+        @NotNull(message = "Não é possivel deixar um funcionario sem sálario")
+        @DecimalMin(value = "1514", message = "Não pode deixar alguem com salario menor que 1514")
+        Double salFuncionario,
         @NotBlank(message = "Não é possivel ter um funcionario sem cargo")
         String cargo
 

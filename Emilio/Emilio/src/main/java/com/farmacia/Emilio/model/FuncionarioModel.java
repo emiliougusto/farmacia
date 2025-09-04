@@ -34,7 +34,7 @@ public class FuncionarioModel {
     @Column(name ="EMAILFUNCIONARIO")
     @Email private String emailFuncionario;
     @Column(name = "SALFUNCIONARIO")
-    private double salarioFuncionario;
+    private double salFuncionario;
     @Column(name= "CARGOFUNCIONARIO")
     private String cargo;
     @Column(name= "CDCARGOFUNCIONARIO")

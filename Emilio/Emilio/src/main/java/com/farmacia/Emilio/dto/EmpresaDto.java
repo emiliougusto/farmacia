@@ -12,6 +12,6 @@ public record EmpresaDto(
         @NotBlank(message = "A empresa precisa ter um endereço")
         String enderecoEmpresa,
         @NotBlank(message = "A empresa precisa ter um EMAIL")
-        String Email
+        String emailEmpresa
 ) {
 }

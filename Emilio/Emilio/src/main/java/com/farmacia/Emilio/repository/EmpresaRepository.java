@@ -10,5 +10,5 @@ public interface EmpresaRepository extends JpaRepository<EmpresaModel, Integer> 
 
     Optional<EmpresaModel> findByIdEmpresa(Integer idEmpresa);
 
-    Optional<EmpresaModel> findAllByIdEmpresa(Integer idEmpresa);
+        Optional<EmpresaModel> findAllByIdEmpresa(Integer idEmpresa);
 }
